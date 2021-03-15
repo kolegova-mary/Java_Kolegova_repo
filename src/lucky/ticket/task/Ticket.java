@@ -7,7 +7,7 @@ public class Ticket {
         Scanner in = new Scanner(System.in);
         System.out.println("Please enter: ");
         int inputInt = in.nextInt();
-        if (inputInt <= 999999 && inputInt >= 100000 && isMyTicketLucky(inputInt)) {
+        if (isMyTicketLucky(inputInt)) {
             System.out.println("Congratulations, you have a lucky ticket!");
         } else {
             System.out.println("Sorry, try again later");
