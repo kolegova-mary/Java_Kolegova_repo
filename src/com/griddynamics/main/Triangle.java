@@ -1,5 +1,6 @@
 package com.griddynamics.main;
 
+import java.math.BigDecimal;
 import java.util.Scanner;
 
 public class Triangle {
@@ -15,22 +16,27 @@ public class Triangle {
 
     }
 
-    public static boolean doubleEquals(double a, double b) {
-        final double EPS = 0.00001;
-        return Math.abs(a - b) < EPS;
+    public static boolean checkIfRectangular(BigDecimal x, BigDecimal y, BigDecimal z) {
+        return (x.multiply(x).add(y.multiply(y))).compareTo(z.multiply(z)) == 0 ||
+                (z.multiply(z).add(y.multiply(y))).compareTo(x.multiply(x)) == 0 ||
+                (x.multiply(x).add(z.multiply(z))).compareTo(y.multiply(y)) == 0;
     }
 
-    public static boolean checkIfRectangular(double x, double y, double z) {
-        return doubleEquals(x * x + y * y, z * z) || doubleEquals(x * x + z * z, y * y) || doubleEquals(z * z + y * y, x * x);
+    public static boolean checkIfIsosceles(BigDecimal x, BigDecimal y, BigDecimal z) {
+        return x.compareTo(y) == 0 || y.compareTo(z) == 0 || x.compareTo(z) == 0;
     }
 
-    public static boolean checkIfIsosceles(double x, double y, double z) {
-        return doubleEquals(x, y) || doubleEquals(x, z) || doubleEquals(y, z);
+    public static boolean checkIfNotZeroAndRealTriangle(BigDecimal x, BigDecimal y, BigDecimal z) {
+        return !(x.compareTo(BigDecimal.valueOf(0)) == 0 || y.compareTo(BigDecimal.valueOf(0)) == 0 || z.compareTo(BigDecimal.valueOf(0)) == 0) &&
+                z.compareTo(x.add(y)) < 0 && x.compareTo(z.add(y)) < 0 && y.compareTo(z.add(y)) < 0;
     }
 
-    public static TriangleType triangleAnalysisSystem(double x, double y, double z) {
-        if (!(doubleEquals(x, 0) || doubleEquals(y, 0) || doubleEquals(z, 0)) && x + y > z && x + z > y && y + z > x) {
-            if (doubleEquals(x, y) && doubleEquals(x, z)) {
+    public static TriangleType triangleAnalysisSystem(double fx, double fy, double fz) throws IllegalArgumentException {
+        BigDecimal x = BigDecimal.valueOf(fx);
+        BigDecimal y = BigDecimal.valueOf(fy);
+        BigDecimal z = BigDecimal.valueOf(fz);
+        if (checkIfNotZeroAndRealTriangle(x, y, z)) {
+            if (x.compareTo(y) == 0 && x.compareTo(z) == 0) {
                 System.out.println("You have equilateral triangle");
                 return TriangleType.EQUILATERAL_TRIANGLE;
             } else {
@@ -53,8 +59,7 @@ public class Triangle {
                 }
             }
         } else {
-            System.out.println("Sorry, it is impossible to make a triangle from your data");
-            return TriangleType.NOT_TRIANGLE;
+            throw new IllegalArgumentException("Sorry, it is impossible to make a triangle from your data");
         }
     }
 
@@ -63,7 +68,6 @@ public class Triangle {
         RECTANGULAR_ISOSCELES_TRIANGLE,
         ISOSCELES_TRIANGLE,
         RECTANGULAR_TRIANGLE,
-        DEFAULT_TRIANGLE,
-        NOT_TRIANGLE
+        DEFAULT_TRIANGLE
     }
 }
