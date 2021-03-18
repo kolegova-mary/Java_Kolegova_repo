@@ -11,62 +11,62 @@ import static org.testng.AssertJUnit.assertFalse;
 public class TicketTest {
 
     @Test(expectedExceptions = IllegalArgumentException.class)
-    public void testNegativeValue() throws IllegalArgumentException {
+    public void testNegativeValue() {
         isMyTicketLucky("-1");
     }
 
     @Test(expectedExceptions = IllegalArgumentException.class)
-    public void testShortValue() throws IllegalArgumentException{
-       isMyTicketLucky("2882");
+    public void testShortValue() {
+        isMyTicketLucky("2882");
     }
 
     @Test(expectedExceptions = IllegalArgumentException.class)
-    public void testZeroValue() throws IllegalArgumentException{
+    public void testZeroValue() {
         isMyTicketLucky("0");
     }
 
     @Test
-    public void testRepeatedValue()throws IllegalArgumentException {
+    public void testRepeatedValue() {
         assertTrue(isMyTicketLucky("101101"));
     }
 
     @Test
-    public void testSumValue() throws IllegalArgumentException{
+    public void testSumValue() {
         assertTrue(isMyTicketLucky("346922"));
     }
 
     @Test
-    public void testSumValueWithZero() throws IllegalArgumentException{
+    public void testSumValueWithZero() {
         assertTrue(isMyTicketLucky("056902"));
     }
 
     @Test(expectedExceptions = IllegalArgumentException.class)
-    public void testLongValue() throws IllegalArgumentException{
+    public void testLongValue() {
         isMyTicketLucky("78567856");
     }
 
     @Test(expectedExceptions = IllegalArgumentException.class)
-    public void testSpecialChars() throws IllegalArgumentException{
+    public void testSpecialChars() {
         isMyTicketLucky("0^&1@$");
     }
 
     @Test(expectedExceptions = IllegalArgumentException.class)
-    public void testEmpty() throws IllegalArgumentException{
-       isMyTicketLucky("");
+    public void testEmpty() {
+        isMyTicketLucky("");
     }
 
     @Test(expectedExceptions = IllegalArgumentException.class)
-    public void testSpace()throws IllegalArgumentException {
-       isMyTicketLucky(" 029 0");
+    public void testSpace() {
+        isMyTicketLucky(" 029 0");
     }
 
     @Test(expectedExceptions = IllegalArgumentException.class)
-    public void testExpression()throws IllegalArgumentException {
-       isMyTicketLucky("12.3+1");
+    public void testExpression() {
+        isMyTicketLucky("12.3+1");
     }
 
     @Test
-    public void testWrongValue()throws IllegalArgumentException {
+    public void testWrongValue() {
         assertFalse(isMyTicketLucky("123456"));
     }
 }

@@ -11,7 +11,7 @@ public class Ticket {
         in.close();
     }
 
-    public static boolean isMyTicketLucky(String ticketNumber) throws IllegalArgumentException {
+    public static boolean isMyTicketLucky(String ticketNumber) {
         if (ticketNumber.matches("\\d{6}")) {
             char[] x = new char[3];
             char[] y = new char[3];
@@ -30,6 +30,7 @@ public class Ticket {
             throw new IllegalArgumentException("Give correct ticket, please.");
         }
     }
+
 
     public static int sum(char[] ticketHalf) {
         int sum = 0;
