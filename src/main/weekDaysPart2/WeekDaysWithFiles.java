@@ -22,6 +22,7 @@ public class WeekDaysWithFiles {
         } catch (FileFormatException | IOException e) {
             e.printStackTrace();
         }
+
     }
 
     public static void read(String inputFile) throws FileFormatException, IOException {
@@ -43,13 +44,11 @@ public class WeekDaysWithFiles {
             return;
         }
         try (Writer daysWriter = new FileWriter(inputFilePath.getParent().resolve("NamesOfDays").toFile())) {
-            for (int i = 0; i < numbersOfDays.size(); i++) {
-                WeeksDays day = lookForDay(numbersOfDays.get(i));
+            for (Integer numbersOfDay : numbersOfDays) {
+                WeeksDays day = lookForDay(numbersOfDay);
                 chooseNoticeForDay(day, daysWriter);
             }
         }
-
-
     }
 
     public static WeeksDays lookForDay(int x) {
@@ -122,7 +121,7 @@ public class WeekDaysWithFiles {
         THURSDAY,
         FRIDAY,
         SATURDAY,
-        SUNDAY;
+        SUNDAY
 
     }
 }
