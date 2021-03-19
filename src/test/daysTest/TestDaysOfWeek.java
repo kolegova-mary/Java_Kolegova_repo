@@ -1,59 +1,37 @@
 package daysTest;
 
+import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
 import static comgriddynamics.days.DaysOfWeek.*;
 import static comgriddynamics.days.DaysOfWeek.chooseNoticeForDay;
+import static org.testng.Assert.assertEquals;
 import static org.testng.Assert.assertSame;
 
 
 public class TestDaysOfWeek {
-
-    @Test
-    public void testMonday() {
-        WeeksDays day = chooseNoticeForDay(lookForDay(1));
-        assertSame(day, WeeksDays.MONDAY);
+    @DataProvider(name = "testAllDays")
+    public Object[][] createDays() {
+        return new Object[][]{
+                {WeeksDays.MONDAY, 1},
+                {WeeksDays.TUESDAY, 2},
+                {WeeksDays.WEDNESDAY, 3},
+                {WeeksDays.THURSDAY, 4},
+                {WeeksDays.FRIDAY, 5},
+                {WeeksDays.SATURDAY, 6},
+                {WeeksDays.SUNDAY, 7}
+        };
     }
 
-    @Test
-    public void testTuesday() {
-        WeeksDays day = chooseNoticeForDay(lookForDay(2));
-        assertSame(day, WeeksDays.TUESDAY);
-    }
-
-    @Test
-    public void testWednesday() {
-        WeeksDays day = chooseNoticeForDay(lookForDay(3));
-        assertSame(day, WeeksDays.WEDNESDAY);
-    }
-
-    @Test
-    public void testThursday() {
-        WeeksDays day = chooseNoticeForDay(lookForDay(4));
-        assertSame(day, WeeksDays.THURSDAY);
-    }
-
-    @Test
-    public void testFriday() {
-        WeeksDays day = chooseNoticeForDay(lookForDay(5));
-        assertSame(day, WeeksDays.FRIDAY);
-    }
-
-    @Test
-    public void testSaturday() {
-        WeeksDays day = chooseNoticeForDay(lookForDay(6));
-        assertSame(day, WeeksDays.SATURDAY);
-    }
-
-    @Test
-    public void testSunday() {
-        WeeksDays day = chooseNoticeForDay(lookForDay(7));
-        assertSame(day, WeeksDays.SUNDAY);
+    @Test(dataProvider = "testAllDays")
+    public void verifyData(WeeksDays day, Integer num) {
+        WeeksDays curDay = chooseNoticeForDay(lookForDay(num));
+        assertEquals(curDay, day);
     }
 
     @Test(expectedExceptions = IllegalArgumentException.class)
     public void testOutOfRange1() {
-       chooseNoticeForDay(lookForDay(100));
+        chooseNoticeForDay(lookForDay(100));
     }
 
     @Test(expectedExceptions = IllegalArgumentException.class)
