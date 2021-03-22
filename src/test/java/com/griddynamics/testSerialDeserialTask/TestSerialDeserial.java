@@ -1,4 +1,4 @@
-package testSerialDeserialTask;
+package com.griddynamics.testSerialDeserialTask;
 
 import org.testng.annotations.Test;
 import com.griddynamics.serialDeserialTask.SerialDeserial;
