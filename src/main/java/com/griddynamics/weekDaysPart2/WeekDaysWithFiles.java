@@ -1,4 +1,4 @@
-package weekDaysPart2;
+package com.griddynamics.weekDaysPart2;
 
 import java.io.FileWriter;
 import java.io.IOException;
