@@ -12,7 +12,7 @@ import java.util.List;
 
 public class SerializationSolution {
     public static void main(String[] args){
-        URL resource = SerializationSolution.class.getClassLoader().getResource("vehicle_data.txt");
+        URL resource = SerializationSolution.class.getClassLoader().getResource("vehicle_dataSerializationTask.txt");
         List<Vehicle> vehicles = null;
         if (resource == null) {
             System.out.println("Can't find input file.");

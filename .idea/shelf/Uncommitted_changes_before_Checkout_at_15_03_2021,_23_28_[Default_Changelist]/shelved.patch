@@ -1,0 +1,38 @@
+Index: src/triangle/analysis/task/Triangle.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package triangle.analysis.task;\n\nimport java.util.Scanner;\n\npublic class Triangle {\n    public static void main(String[] args) {\n        Scanner in = new Scanner(System.in);\n        System.out.print(\"Please, enter the first side of triangle: \");\n        double first = in.nextDouble();\n        System.out.print(\"Enter the second side of triangle: \");\n        double second = in.nextDouble();\n        System.out.print(\"Enter the third side of triangle: \");\n        double third = in.nextDouble();\n        triangleAnalysisSystem(first, second, third);\n\n    }\n\n    public static TriangleType triangleAnalysisSystem(double x, double y, double z) {\n        if (x != 0 && y != 0 && z != 0 && x + y > z && x + z > y && y + z > x) {\n            if (x == y && x == z) {\n                System.out.println(\"You have equilateral triangle\");\n                return TriangleType.EQUILATERAL_TRIANGLE;\n            } else {\n                if (x == y || y == z || x == z) {\n                    System.out.println(\"You have isosceles triangle\");\n                    return TriangleType.ISOSCELES_TRIANGLE;\n                } else {\n                    System.out.println(\"You have non-sided triangle\");\n                    return TriangleType.DEFAULT_TRIANGLE;\n                }\n            }\n        } else {\n            System.out.println(\"Sorry, it is impossible to make a triangle from your data\");\n            return TriangleType.NOT_TRIANGLE;\n        }\n    }\n\n    enum TriangleType {\n        EQUILATERAL_TRIANGLE,\n        ISOSCELES_TRIANGLE,\n        DEFAULT_TRIANGLE,\n        NOT_TRIANGLE\n    }\n}\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/triangle/analysis/task/Triangle.java b/src/triangle/analysis/task/Triangle.java
+--- a/src/triangle/analysis/task/Triangle.java	(revision 08bef13fb35302de849831a9c80452da9e8494a9)
++++ b/src/triangle/analysis/task/Triangle.java	(date 1615835775853)
+@@ -1,5 +1,8 @@
+ package triangle.analysis.task;
+ 
++import com.griddynamics.FirstApp;
++
++import java.util.ArrayList;
+ import java.util.Scanner;
+ 
+ public class Triangle {
+Index: src/com/griddynamics/FirstApp.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package com.griddynamics;\n\n//java -cp ~/Java_Kolegova_repo/src com.griddynamics.FirstApp\npublic class FirstApp {\n    public static void main(String[] args){\n        System.out.println(\"My first application\");\n    }\n}\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/com/griddynamics/FirstApp.java b/src/com/griddynamics/FirstApp.java
+--- a/src/com/griddynamics/FirstApp.java	(revision 08bef13fb35302de849831a9c80452da9e8494a9)
++++ b/src/com/griddynamics/FirstApp.java	(date 1615835775868)
+@@ -1,5 +1,8 @@
+ package com.griddynamics;
+ 
++import java.util.ArrayList;
++import java.util.List;
++
+ //java -cp ~/Java_Kolegova_repo/src com.griddynamics.FirstApp
+ public class FirstApp {
+     public static void main(String[] args){
