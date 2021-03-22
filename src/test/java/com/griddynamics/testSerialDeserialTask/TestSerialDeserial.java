@@ -1,4 +1,4 @@
-package testSerialDeserialTask;
+package com.griddynamics.testSerialDeserialTask;
 
 import org.testng.annotations.Test;
 import com.griddynamics.serialDeserialTask.SerialDeserial;
@@ -12,19 +12,14 @@ import static org.testng.AssertJUnit.fail;
 
 public class TestSerialDeserial {
     @Test
-    public void testUsual() {
-        String filePath = getFilePath("vehicle_data.txt");
-        try {
+    public void testUsual() throws FileFormatException,IOException{
+        String filePath = getFilePath("vehicle_data_serial_deserial.txt");
             SerialDeserial.readFromMainFile(filePath);
-        } catch (FileFormatException | IOException e) {
-            e.printStackTrace();
-            fail();
-        }
     }
 
     @Test(expectedExceptions = FileFormatException.class)
     public void testInvalidValue() throws IOException, FileFormatException {
-        SerialDeserial.readFromMainFile(getFilePath("invalid_value.txt"));
+        SerialDeserial.readFromMainFile(getFilePath("invalid_value_serial_deserial.txt"));
     }
 
     @Test(expectedExceptions = IOException.class)
@@ -34,13 +29,13 @@ public class TestSerialDeserial {
 
     @Test(expectedExceptions = FileFormatException.class)
     public void testMissedComma() throws IOException, FileFormatException {
-        SerialDeserial.readFromMainFile(getFilePath("missed_comma.txt"));
+        SerialDeserial.readFromMainFile(getFilePath("missed_comma_serial_deserial.txt"));
     }
 
     @Test
     public void testRightLineMissedComma() throws IOException {
         try {
-            SerialDeserial.readFromMainFile(getFilePath("missed_comma.txt"));
+            SerialDeserial.readFromMainFile(getFilePath("missed_comma_serial_deserial.txt"));
         } catch (FileFormatException e) {
             assertEquals(4, e.getLineNumber());
         }
@@ -48,12 +43,12 @@ public class TestSerialDeserial {
 
     @Test
     public void textEmpty() throws IOException, FileFormatException {
-        SerialDeserial.readFromMainFile(getFilePath("empty.txt"));
+        SerialDeserial.readFromMainFile(getFilePath("empty_serial_deserial.txt"));
     }
 
     @Test(expectedExceptions = FileFormatException.class)
     public void testExtraComma() throws IOException, FileFormatException {
-        SerialDeserial.readFromMainFile(getFilePath("extra_comma.txt"));
+        SerialDeserial.readFromMainFile(getFilePath("extra_comma_serial_deserial.txt"));
     }
 
     private String getFilePath(String fileName) {
