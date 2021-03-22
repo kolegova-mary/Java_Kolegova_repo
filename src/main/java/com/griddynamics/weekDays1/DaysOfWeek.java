@@ -1,4 +1,4 @@
-package comgriddynamics.days;
+package com.griddynamics.weekDays1;
 
 import java.util.Scanner;
 
@@ -65,7 +65,7 @@ public class DaysOfWeek {
         THURSDAY,
         FRIDAY,
         SATURDAY,
-        SUNDAY;
+        SUNDAY
 
     }
 }

@@ -1,12 +1,13 @@
-package daysTest;
+package com.griddynamics.testWeekDays1;
 
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
+import com.griddynamics.weekDays1.DaysOfWeek.*;
 
-import static comgriddynamics.days.DaysOfWeek.*;
-import static comgriddynamics.days.DaysOfWeek.chooseNoticeForDay;
+import static com.griddynamics.weekDays1.DaysOfWeek.chooseNoticeForDay;
+import static com.griddynamics.weekDays1.DaysOfWeek.lookForDay;
+
 import static org.testng.Assert.assertEquals;
-import static org.testng.Assert.assertSame;
 
 
 public class TestDaysOfWeek {
