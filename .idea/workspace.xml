@@ -5,14 +5,36 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b2a72b5b-4164-4036-8906-f5edd0bc0bce" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/griddynamics/serializationTask/SerializationSolution.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/griddynamics/serializationTask/SerializationSolution.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/resources/empty.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/resources/emptySerializationTask.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/resources/extra_comma.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/resources/extra_commaSerializationTask.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/resources/invalid_value.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/resources/invalid_valueSerializationTask.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/resources/missed_comma.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/resources/missed_commaSerializationTask.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/resources/vehicle_data.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/resources/vehicle_dataSerializationTask.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/griddynamics/testSerializationTask/TestSerializationSolution.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/griddynamics/testSerializationTask/TestSerializationSolution.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/first-app.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__aopalliance_aopalliance_1_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_beust_jcommander_1_72.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_code_gson_gson_2_8_5.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_guava_guava_19_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_inject_guice_no_aop_4_1_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__javax_inject_javax_inject_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_testng_testng_7_1_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_yaml_snakeyaml_1_21.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/griddynamics/main/VehicleSolution.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/griddynamics/FirstApp.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/griddynamics/main/FirstApp.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/griddynamics/main/Ticket.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/griddynamics/main/Triangle.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/griddynamics/weekDays1/DaysOfWeek.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/griddynamics/weekDaysPart2/WeekDaysWithFiles.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/griddynamics/testWeekDays1/TestDaysOfWeek.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/griddynamics/testWeekDaysPart2/testWeekDaysPart2.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/com/griddynamics/test/TestVehicle.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/java/com/griddynamics/test/TestTriangle.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/java/com/griddynamics/test/TicketTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/testResources/empty.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/testResources/extra_comma.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/testResources/invalid_value.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/testResources/missed_comma.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/testResources/vehicle_data.txt" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -105,6 +127,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/src/test/java" />
