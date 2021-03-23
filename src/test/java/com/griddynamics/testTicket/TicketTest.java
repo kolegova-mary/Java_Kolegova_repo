@@ -2,7 +2,7 @@ package com.griddynamics.testTicket;
 
 import org.testng.annotations.Test;
 
-import static ticketTask.Ticket.isMyTicketLucky;
+import static com.griddynamics.ticketTask.Ticket.isMyTicketLucky;
 import static org.testng.Assert.assertSame;
 import static org.testng.Assert.assertTrue;
 import static org.testng.AssertJUnit.assertFalse;

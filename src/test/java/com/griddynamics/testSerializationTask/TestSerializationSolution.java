@@ -1,47 +1,40 @@
-package com.griddynamics.testVehicleSolution;
+package com.griddynamics.testSerializationTask;
 
-import com.griddynamics.vehicleSolutionTask.VehicleSolution;
-import com.griddynamics.vehicleSolutionTask.VehicleSolution.FileFormatException;
+import com.griddynamics.serializationTask.*;
 import org.testng.annotations.Test;
+import com.griddynamics.serializationTask.SerializationSolution.FileFormatException;
 
 import java.io.IOException;
 import java.net.URL;
 
-import static org.testng.Assert.assertEquals;
-import static org.testng.Assert.fail;
-
-public class TestVehicle {
+import static org.testng.AssertJUnit.assertEquals;
+public class TestSerializationSolution {
 
     @Test
-    public void testUsual() {
-        String filePath = getFilePath("vehicle_data.txt");
-        try {
-            VehicleSolution.read(filePath);
-        } catch (FileFormatException | IOException e) {
-            e.printStackTrace();
-            fail();
-        }
+    public void testUsual() throws FileFormatException, IOException {
+        String filePath = getFilePath("vehicle_dataSerializationTask.txt");
+        SerializationSolution.readFromMainFile(filePath);
     }
 
     @Test(expectedExceptions = FileFormatException.class)
     public void testInvalidValue() throws IOException, FileFormatException {
-        VehicleSolution.read(getFilePath("invalid_value.txt"));
+        SerializationSolution.readFromMainFile(getFilePath("invalid_valueSerializationTask.txt"));
     }
 
     @Test(expectedExceptions = IOException.class)
     public void testNotExistFile() throws IOException, FileFormatException {
-        VehicleSolution.read(getFilePath("not-existed.txt"));
+        SerializationSolution.readFromMainFile(getFilePath("not-existed.txt"));
     }
 
     @Test(expectedExceptions = FileFormatException.class)
     public void testMissedComma() throws IOException, FileFormatException {
-        VehicleSolution.read(getFilePath("missed_comma.txt"));
+        SerializationSolution.readFromMainFile(getFilePath("missed_commaSerializationTask.txt"));
     }
 
     @Test
     public void testRightLineMissedComma() throws IOException {
         try {
-            VehicleSolution.read(getFilePath("missed_comma.txt"));
+            SerializationSolution.readFromMainFile(getFilePath("missed_commaSerializationTask.txt"));
         } catch (FileFormatException e) {
             assertEquals(e.getLineNumber(), 2);
         }
@@ -49,17 +42,15 @@ public class TestVehicle {
 
     @Test
     public void textEmpty() throws IOException, FileFormatException {
-        //
-        VehicleSolution.read(getFilePath("empty.txt"));
+        SerializationSolution.readFromMainFile(getFilePath("emptySerializationTask.txt"));
     }
 
     @Test(expectedExceptions = FileFormatException.class)
     public void testExtraComma() throws IOException, FileFormatException {
-        VehicleSolution.read(getFilePath("extra_comma.txt"));
+        SerializationSolution.readFromMainFile(getFilePath("extra_commaSerializationTask.txt"));
     }
 
     private String getFilePath(String fileName) {
-        Integer a = 5;
         URL url = getClass().getClassLoader().getResource(fileName);
         return url == null ? "" : url.getPath();
     }

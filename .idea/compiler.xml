@@ -7,9 +7,11 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="Java_Kolegova_repo" />
+        <module name="first-app" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="first-app" target="1.8" />
       <module name="Java_Kolegova_repo" target="1.8" />
     </bytecodeTargetLevel>
   </component>
