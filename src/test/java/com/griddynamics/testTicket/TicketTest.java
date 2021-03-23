@@ -1,9 +1,8 @@
-package com.griddynamics.test;
+package com.griddynamics.testTicket;
 
-import com.griddynamics.main.Ticket;
 import org.testng.annotations.Test;
 
-import static com.griddynamics.main.Ticket.isMyTicketLucky;
+import static ticketTask.Ticket.isMyTicketLucky;
 import static org.testng.Assert.assertSame;
 import static org.testng.Assert.assertTrue;
 import static org.testng.AssertJUnit.assertFalse;

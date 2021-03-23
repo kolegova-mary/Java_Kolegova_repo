@@ -1,4 +1,4 @@
-package com.griddynamics.main;
+package com.griddynamics.ticketTask;
 
 import java.util.Scanner;
 

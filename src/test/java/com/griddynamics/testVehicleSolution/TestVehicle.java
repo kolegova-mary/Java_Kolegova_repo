@@ -1,4 +1,4 @@
-package com.griddynamics.test;
+package com.griddynamics.testVehicleSolution;
 
 import com.griddynamics.main.VehicleSolution;
 import com.griddynamics.main.VehicleSolution.FileFormatException;

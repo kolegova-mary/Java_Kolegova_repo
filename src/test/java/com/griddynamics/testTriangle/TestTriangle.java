@@ -1,9 +1,9 @@
-package com.griddynamics.test;
+package com.griddynamics.testTriangle;
 
-import com.griddynamics.main.Triangle.TriangleType;
+import triangleTask.Triangle.TriangleType;
 import org.testng.annotations.Test;
 
-import static com.griddynamics.main.Triangle.triangleAnalysisSystem;
+import static triangleTask.Triangle.triangleAnalysisSystem;
 import static org.testng.Assert.assertSame;
 
 public class TestTriangle {

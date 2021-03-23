@@ -1,12 +1,12 @@
 package com.griddynamics.testWeekDaysPart2;
 
-import com.griddynamics.weekDaysPart2.WeekDaysWithFiles.FileFormatException;
+import weekDaysPart2.WeekDaysWithFiles.FileFormatException;
 import org.testng.annotations.Test;
 
 import java.io.IOException;
 import java.net.URL;
 
-import static com.griddynamics.weekDaysPart2.WeekDaysWithFiles.read;
+import static weekDaysPart2.WeekDaysWithFiles.read;
 import static org.testng.AssertJUnit.fail;
 
 

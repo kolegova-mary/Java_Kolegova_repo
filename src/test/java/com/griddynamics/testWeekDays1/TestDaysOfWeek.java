@@ -2,10 +2,10 @@ package com.griddynamics.testWeekDays1;
 
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
-import com.griddynamics.weekDays1.DaysOfWeek.*;
+import weekDays1.DaysOfWeek.*;
 
-import static com.griddynamics.weekDays1.DaysOfWeek.chooseNoticeForDay;
-import static com.griddynamics.weekDays1.DaysOfWeek.lookForDay;
+import static weekDays1.DaysOfWeek.chooseNoticeForDay;
+import static weekDays1.DaysOfWeek.lookForDay;
 
 import static org.testng.Assert.assertEquals;
 

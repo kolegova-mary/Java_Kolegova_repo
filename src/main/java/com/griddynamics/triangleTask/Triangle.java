@@ -1,4 +1,4 @@
-package com.griddynamics.main;
+package com.griddynamics.triangleTask;
 import java.util.Scanner;
 
 public class Triangle {

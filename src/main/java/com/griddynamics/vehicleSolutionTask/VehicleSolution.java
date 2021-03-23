@@ -1,4 +1,4 @@
-package com.griddynamics.main;
+package com.griddynamics.vehicleSolutionTask;
 
 import java.io.FileWriter;
 import java.io.IOException;

@@ -1,4 +1,4 @@
-package com.griddynamics.main;
+package com.griddynamics.FirstAppTask;
 
 //java -cp ~/Java_Kolegova_repo/src com.griddynamics.FirstApp
 public class FirstApp {
