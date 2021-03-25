@@ -5,36 +5,23 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b2a72b5b-4164-4036-8906-f5edd0bc0bce" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/first-app.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/griddynamics/collectionsTask/CollectionsTask.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/resources/extra_comma_collections.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/resources/invalid_value_collections.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/resources/missed_comma_collections.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/resources/vehicle_data_collections.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/griddynamics/testCollectionTask/TestCollectionTask.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__aopalliance_aopalliance_1_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_beust_jcommander_1_72.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_code_gson_gson_2_8_5.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_guava_guava_19_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_inject_guice_no_aop_4_1_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__javax_inject_javax_inject_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_testng_testng_7_1_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_yaml_snakeyaml_1_21.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_15_03_2021,_23_28_[Default_Changelist]/shelved.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_15_03_2021__23_28__Default_Changelist_.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/griddynamics/main/VehicleSolution.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/griddynamics/FirstApp.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/griddynamics/main/FirstApp.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/griddynamics/main/Ticket.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/griddynamics/main/Triangle.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/griddynamics/weekDays1/DaysOfWeek.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/griddynamics/weekDaysPart2/WeekDaysWithFiles.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/griddynamics/testWeekDays1/TestDaysOfWeek.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/griddynamics/testWeekDaysPart2/testWeekDaysPart2.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/com/griddynamics/test/TestVehicle.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/java/com/griddynamics/test/TestTriangle.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/java/com/griddynamics/test/TicketTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/testResources/empty.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/testResources/extra_comma.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/testResources/invalid_value.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/testResources/missed_comma.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/testResources/vehicle_data.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/first-app.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/resources/empty.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/resources/empty_collections.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/griddynamics/testVehicleSolution/TestVehicle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/griddynamics/testVehicleSolution/TestVehicle.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/griddynamics/serializationTask/SerializationSolution.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/griddynamics/serializationTask/SerializationSolution.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/vehicle_data.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/vehicle_data.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/griddynamics/testSerializationTask/TestSerializationSolution.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/griddynamics/testSerializationTask/TestSerializationSolution.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,7 +38,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="weekDaysPart2" />
+        <entry key="$PROJECT_DIR$" value="master" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -150,12 +137,25 @@
       <recent name="$PROJECT_DIR$/src/test/java/com/griddynamics/testSerializationTask" />
     </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="com.griddynamics" />
       <recent name="com" />
       <recent name="" />
-      <recent name="com.griddynamics" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.TestSerializationSolution (1)">
+  <component name="RunManager" selected="TestNG.TestCollectionTask">
+    <configuration name="CollectionsTask" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.griddynamics.collectionsTask.CollectionsTask" />
+      <module name="first-app" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.griddynamics.collectionsTask.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="SerializationSolution" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.griddynamics.serializationTask.SerializationSolution" />
       <module name="Java_Kolegova_repo" />
@@ -169,22 +169,48 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
           <option name="containerStateName" value="" />
         </value>
       </option>
-      <option name="TEST_OBJECT" value="class" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestDaysOfWeek" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="Java_Kolegova_repo" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="daysTest.TestDaysOfWeek" />
+    <configuration name="TestCollectionTask" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="first-app" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.griddynamics.testCollectionTask.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.griddynamics.testCollectionTask" />
+      <option name="MAIN_CLASS_NAME" value="com.griddynamics.testCollectionTask.TestCollectionTask" />
       <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestCollectionTask.testUsual" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="first-app" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.griddynamics.testCollectionTask.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.griddynamics.testCollectionTask" />
+      <option name="MAIN_CLASS_NAME" value="com.griddynamics.testCollectionTask.TestCollectionTask" />
+      <option name="METHOD_NAME" value="testUsual" />
+      <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
       <method v="2">
@@ -208,48 +234,20 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestSerializationSolution" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="Java_Kolegova_repo" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="TestSerializationSolution" />
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="testWeekDaysPart2" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="Java_Kolegova_repo" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="testWeekDaysPart2.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="testWeekDaysPart2" />
-      <option name="MAIN_CLASS_NAME" value="testWeekDaysPart2.testWeekDaysPart2" />
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <list>
       <item itemvalue="Application.SerializationSolution" />
-      <item itemvalue="TestNG.TestDaysOfWeek" />
-      <item itemvalue="TestNG.testWeekDaysPart2" />
-      <item itemvalue="TestNG.TestSerializationSolution" />
       <item itemvalue="TestNG.TestSerializationSolution (1)" />
+      <item itemvalue="Application.CollectionsTask" />
+      <item itemvalue="TestNG.TestCollectionTask" />
+      <item itemvalue="TestNG.TestCollectionTask.testUsual" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.TestCollectionTask" />
+        <item itemvalue="TestNG.TestCollectionTask.testUsual" />
+        <item itemvalue="Application.CollectionsTask" />
         <item itemvalue="TestNG.TestSerializationSolution (1)" />
         <item itemvalue="Application.SerializationSolution" />
-        <item itemvalue="TestNG.TestSerializationSolution" />
-        <item itemvalue="TestNG.testWeekDaysPart2" />
-        <item itemvalue="TestNG.TestDaysOfWeek" />
       </list>
     </recent_temporary>
   </component>
@@ -268,6 +266,7 @@
       <workItem from="1616193504698" duration="8623000" />
       <workItem from="1616250192235" duration="165000" />
       <workItem from="1616250374209" duration="10270000" />
+      <workItem from="1616622411675" duration="14444000" />
     </task>
     <task id="LOCAL-00001" summary="Ticket Task done">
       <created>1615825540824</created>
