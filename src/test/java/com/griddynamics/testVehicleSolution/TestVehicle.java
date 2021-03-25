@@ -25,7 +25,7 @@ public class TestVehicle {
 
     @Test(expectedExceptions = FileFormatException.class)
     public void testInvalidValue() throws IOException, FileFormatException {
-        VehicleSolution.read(getFilePath("invalid_value.txt"));
+        VehicleSolution.read(getFilePath("invalid_value_collections.txt"));
     }
 
     @Test(expectedExceptions = IOException.class)
@@ -50,7 +50,7 @@ public class TestVehicle {
     @Test
     public void textEmpty() throws IOException, FileFormatException {
         //
-        VehicleSolution.read(getFilePath("empty.txt"));
+        VehicleSolution.read(getFilePath("empty_collections.txt"));
     }
 
     @Test(expectedExceptions = FileFormatException.class)
