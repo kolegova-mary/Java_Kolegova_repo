@@ -1,7 +1,8 @@
 package com.griddynamics.models;
 
 public class Truck extends Vehicle {
-    private long tonnage;
+    public long tonnage;
+
 
     public long getTonnage() {
         return tonnage;

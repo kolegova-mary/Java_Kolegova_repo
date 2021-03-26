@@ -1,10 +1,13 @@
 package com.griddynamics.models;
 
+import java.util.Objects;
+
 public class Vehicle implements MovingObject {
-    private String model;
-    private String producer;
-    private int age;
-    protected String typeOfVehicle;
+    public String model;
+    public String producer;
+    public int age;
+    public String typeOfVehicle;
+
 
     public Vehicle() {
     }
@@ -38,6 +41,11 @@ public class Vehicle implements MovingObject {
     public void setAge(int age) {
         this.age = age;
     }
+
+    public int compareTo(Vehicle vehicle) {
+        return toString().compareTo(vehicle.toString());
+    }
+
     @Override
     public String toString() {
         return model + "," + producer + "," + age;
@@ -47,4 +55,15 @@ public class Vehicle implements MovingObject {
     public boolean isMoving() {
         return false;
     }
+
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Vehicle vehicle = (Vehicle) o;
+        return age == vehicle.age && Objects.equals(model, vehicle.model) && Objects.equals(producer, vehicle.producer);
+
+    }
 }
+

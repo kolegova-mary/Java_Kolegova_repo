@@ -1,8 +1,7 @@
 package com.griddynamics.models;
 
-
 public class Car extends Vehicle {
-    protected String type;
+    public String type;
 
     public String getType() {
         return type;
