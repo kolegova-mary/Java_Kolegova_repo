@@ -3,6 +3,7 @@ package com.griddynamics.models;
 public class Truck extends Vehicle {
     public long tonnage;
 
+
     public long getTonnage() {
         return tonnage;
     }

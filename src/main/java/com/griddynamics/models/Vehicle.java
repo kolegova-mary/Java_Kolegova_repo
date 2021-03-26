@@ -8,6 +8,7 @@ public class Vehicle implements MovingObject {
     public int age;
     public String typeOfVehicle;
 
+
     public Vehicle() {
     }
 
@@ -55,6 +56,7 @@ public class Vehicle implements MovingObject {
         return false;
     }
 
+
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
@@ -64,3 +66,4 @@ public class Vehicle implements MovingObject {
 
     }
 }
+
