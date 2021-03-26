@@ -1,4 +1,1 @@
-{"type":"sedan","model":"First-1","producer":"FFF","age":1}
-{"tonnage":90,"model":"Second-4211","producer":"SSS","age":5}
-{"type":"pepe","model":"Third-01","producer":"TTT","age":40}
-{"tonnage":8000,"model":"Forth-11","producer":"OOO","age":5}
+[{"type":"sedan","model":"First-1","producer":"FFF","age":1,"typeOfVehicle":"CAR"},{"tonnage":90,"model":"Second-4211","producer":"SSS","age":5,"typeOfVehicle":"TRUCK"},{"type":"pepe","model":"Third-01","producer":"TTT","age":40,"typeOfVehicle":"CAR"},{"tonnage":8000,"model":"Forth-11","producer":"OOO","age":5,"typeOfVehicle":"TRUCK"}]

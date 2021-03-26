@@ -2,7 +2,11 @@ package com.griddynamics.serialDeserialTask;
 
 import com.google.gson.*;
 import com.google.gson.reflect.TypeToken;
+import com.griddynamics.models.Car;
+import com.griddynamics.models.Truck;
+import com.griddynamics.models.Vehicle;
 
+import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.io.Writer;
@@ -77,8 +81,7 @@ public class SerialDeserial {
     }
 
     public static void writeIntoOneFile(List<Vehicle> vehicles, URL resource) {
-        try (Writer vehiclesWriter = new FileWriter(Paths.get(resource.getPath())
-                .getParent().resolve("new_format_vehicles.json").toFile())) {
+        try (Writer vehiclesWriter = new FileWriter("new_format_vehicles.json")) {
             Gson gson = new Gson();
             String jsonStr = gson.toJson(vehicles);
             vehiclesWriter.write(jsonStr);
@@ -113,118 +116,6 @@ public class SerialDeserial {
             System.out.println("Empty file provided.");
         }
         return vehicles;
-    }
-
-
-    public interface MovingObject {
-        boolean isMoving();
-    }
-
-    public static class Vehicle implements MovingObject {
-        private String model;
-        private String producer;
-        private int age;
-        protected String typeOfVehicle;
-
-        public Vehicle() {
-        }
-
-        public Vehicle(String model, String producer, int age) {
-            this.model = model;
-            this.producer = producer;
-            this.age = age;
-        }
-
-        public String getModel() {
-            return model;
-        }
-
-        public void setModel(String model) {
-            this.model = model;
-        }
-
-        public String getProducer() {
-            return producer;
-        }
-
-        public void setProducer(String producer) {
-            this.producer = producer;
-        }
-
-        public int getAge() {
-            return age;
-        }
-
-        public void setAge(int age) {
-            this.age = age;
-        }
-
-        @Override
-        public String toString() {
-            return model + "," + producer + "," + age;
-        }
-
-        @Override
-        public boolean isMoving() {
-            return false;
-        }
-    }
-
-    public static class Car extends Vehicle {
-        protected String type;
-
-        public String getType() {
-            return type;
-        }
-
-        public void setType(String type) {
-            this.type = type;
-        }
-
-        public Car(String model, String producer, int age, String type) {
-            super(model, producer, age);
-            this.type = type;
-            this.typeOfVehicle = "CAR";
-        }
-
-        @Override
-        public boolean isMoving() {
-            return false;
-        }
-
-        @Override
-        public String toString() {
-            return "CAR: " + super.toString() + "," + type;
-        }
-
-    }
-
-    protected static class Truck extends Vehicle {
-        private long tonnage;
-
-        public long getTonnage() {
-            return tonnage;
-        }
-
-        public void setTonnage(long tonnage) {
-            this.tonnage = tonnage;
-        }
-
-        public Truck(String model, String producer, int age, long tonnage) {
-            super(model, producer, age);
-            this.tonnage = tonnage;
-            this.typeOfVehicle = "TRUCK";
-        }
-
-        @Override
-        public boolean isMoving() {
-            return false;
-        }
-
-        @Override
-        public String toString() {
-            return "TRUCK: " + super.toString() + "," + tonnage;
-        }
     }
 
     public static class FileFormatException extends Exception {
