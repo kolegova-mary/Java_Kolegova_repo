@@ -421,7 +421,14 @@
       <option name="project" value="LOCAL" />
       <updated>1617100627645</updated>
     </task>
-    <option name="localTasksCounter" value="28" />
+    <task id="LOCAL-00028" summary="Merge remote-tracking branch 'origin/compareArrayLinked' into compareArrayLinked&#10;&#10;# Conflicts:&#10;#&#9;.idea/workspace.xml">
+      <created>1617100684537</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1617100684537</updated>
+    </task>
+    <option name="localTasksCounter" value="29" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
