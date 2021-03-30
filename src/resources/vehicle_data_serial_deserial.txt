@@ -1,0 +1,4 @@
+CAR:First-1,FFF,1,sedan
+TRUCK:Second-4211,SSS,5,90
+CAR:Third-01, TTT, 40,  pepe
+TRUCK:Forth-11, OOO, 5,  8000
