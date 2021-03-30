@@ -5,23 +5,22 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b2a72b5b-4164-4036-8906-f5edd0bc0bce" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/griddynamics/collectionsTask/CollectionsTask.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/resources/extra_comma_collections.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/resources/invalid_value_collections.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/resources/missed_comma_collections.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/resources/vehicle_data_collections.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/griddynamics/testCollectionTask/TestCollectionTask.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_15_03_2021,_23_28_[Default_Changelist]/shelved.patch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_15_03_2021__23_28__Default_Changelist_.xml" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/README.MD" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/griddynamics/finalTask/FinalTask.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/griddynamics/finalTask/Goal.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/griddynamics/finalTask/Manager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/griddynamics/finalTask/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/griddynamics/finalTask/actions/Action.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/griddynamics/finalTask/actions/ActionParser.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/griddynamics/finalTask/actions/AddGoalAction.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/griddynamics/finalTask/actions/AddUserAction.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/griddynamics/finalTask/actions/EditDescription.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/griddynamics/finalTask/actions/EditNicknameAction.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/griddynamics/finalTask/actions/EditPhoneAction.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/griddynamics/finalTask/actions/ExitAction.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/griddynamics/finalTask/actions/MenuAction.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/griddynamics/finalTask/actions/SetIfReached.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/first-app.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/resources/empty.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/resources/empty_collections.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/griddynamics/testVehicleSolution/TestVehicle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/griddynamics/testVehicleSolution/TestVehicle.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/griddynamics/serializationTask/SerializationSolution.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/griddynamics/serializationTask/SerializationSolution.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/vehicle_data.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/vehicle_data.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/griddynamics/testSerializationTask/TestSerializationSolution.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/griddynamics/testSerializationTask/TestSerializationSolution.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,6 +30,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -38,7 +38,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="master" />
+        <entry key="$PROJECT_DIR$" value="exceptions" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -142,7 +142,7 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.TestCollectionTask">
+  <component name="RunManager" selected="Application.FinalTask">
     <configuration name="CollectionsTask" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.griddynamics.collectionsTask.CollectionsTask" />
       <module name="first-app" />
@@ -156,12 +156,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SerializationSolution" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.griddynamics.serializationTask.SerializationSolution" />
-      <module name="Java_Kolegova_repo" />
+    <configuration name="FinalTask" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.griddynamics.finalTask.FinalTask" />
+      <module name="first-app" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.griddynamics.serializationTask.*" />
+          <option name="PATTERN" value="com.griddynamics.finalTask.actions.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -169,15 +169,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
           <option name="containerStateName" value="" />
         </value>
       </option>
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -235,19 +233,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.SerializationSolution" />
-      <item itemvalue="TestNG.TestSerializationSolution (1)" />
       <item itemvalue="Application.CollectionsTask" />
+      <item itemvalue="TestNG.TestSerializationSolution (1)" />
       <item itemvalue="TestNG.TestCollectionTask" />
       <item itemvalue="TestNG.TestCollectionTask.testUsual" />
+      <item itemvalue="Application.FinalTask" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.FinalTask" />
         <item itemvalue="TestNG.TestCollectionTask" />
         <item itemvalue="TestNG.TestCollectionTask.testUsual" />
         <item itemvalue="Application.CollectionsTask" />
         <item itemvalue="TestNG.TestSerializationSolution (1)" />
-        <item itemvalue="Application.SerializationSolution" />
       </list>
     </recent_temporary>
   </component>
