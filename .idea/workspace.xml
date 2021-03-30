@@ -407,7 +407,21 @@
       <option name="project" value="LOCAL" />
       <updated>1616763211326</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="Issue 04. Part 2. List VS LinkedList Changed.">
+      <created>1617100554789</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1617100554789</updated>
+    </task>
+    <task id="LOCAL-00027" summary="Merge remote-tracking branch 'origin/compareArrayLinked' into compareArrayLinked&#10;&#10;# Conflicts:&#10;#&#9;.idea/workspace.xml">
+      <created>1617100627645</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1617100627645</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -432,8 +446,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Issue 01. HW01, Triangle impl." />
-    <MESSAGE value="Issue 00. Lucky Ticket Improved." />
     <MESSAGE value="Issue 01. HW 01. Triangle Analysis System Improved." />
     <MESSAGE value="Project structure improved in master" />
     <MESSAGE value="Issue 02. Cars and Trucks done." />
@@ -456,8 +468,10 @@
     <MESSAGE value="Issue 03. HW 03. SerialDeserial Task - Into 1 File Fixed." />
     <MESSAGE value="Issue 04. Part 1. Collections." />
     <MESSAGE value="Issue 04. Part 1. Collections Modified." />
+    <MESSAGE value="Issue 06. ExceptionsTask." />
     <MESSAGE value="Issue 04. Part 2. List VS LinkedList Changed." />
-    <option name="LAST_COMMIT_MESSAGE" value="Issue 04. Part 2. List VS LinkedList Changed." />
+    <MESSAGE value="Merge remote-tracking branch 'origin/compareArrayLinked' into compareArrayLinked&#10;&#10;# Conflicts:&#10;#&#9;.idea/workspace.xml" />
+    <option name="LAST_COMMIT_MESSAGE" value="Merge remote-tracking branch 'origin/compareArrayLinked' into compareArrayLinked&#10;&#10;# Conflicts:&#10;#&#9;.idea/workspace.xml" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
