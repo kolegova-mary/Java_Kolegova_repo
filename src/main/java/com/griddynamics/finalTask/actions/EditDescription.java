@@ -11,8 +11,6 @@ public class EditDescription implements Action {
     @Override
     public void execute() {
         Scanner in = new Scanner(System.in);
-        System.out.println("Write name of the goal:");
-        String name = in.nextLine();
         System.out.println("Write first name, who has/had this goal?");
         String firstName = in.nextLine();
         System.out.println("Write last name, who has/had this goal?");
@@ -24,14 +22,16 @@ public class EditDescription implements Action {
         } catch (NoSuchElementException e) {
             System.out.println("User not found.");
         }
+        System.out.println("Write name of the goal:");
+        String name = in.nextLine();
         try {
             goal = user.findGoal(name);
-        } catch (NoSuchElementException e) {
+        } catch (NoSuchElementException | NullPointerException e) {
             System.out.println("Goal not found.");
         }
+        //it shouldn’t be less than 10 characters and more than 50
         System.out.println("Write new description:");
         String description = in.nextLine();
         goal.setDescription(description);
-
     }
 }

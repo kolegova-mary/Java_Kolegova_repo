@@ -5,22 +5,24 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b2a72b5b-4164-4036-8906-f5edd0bc0bce" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/README.MD" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/griddynamics/finalTask/FinalTask.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/griddynamics/finalTask/Goal.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/griddynamics/finalTask/Manager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/griddynamics/finalTask/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/griddynamics/finalTask/actions/Action.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/griddynamics/finalTask/actions/ActionParser.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/griddynamics/finalTask/actions/AddGoalAction.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/griddynamics/finalTask/actions/AddUserAction.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/griddynamics/finalTask/actions/EditDescription.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/griddynamics/finalTask/actions/EditNicknameAction.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/griddynamics/finalTask/actions/EditPhoneAction.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/griddynamics/finalTask/actions/ExitAction.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/griddynamics/finalTask/actions/MenuAction.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/griddynamics/finalTask/actions/SetIfReached.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/griddynamics/finalTask/actions/ShowGoalsAction.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/griddynamics/finalTask/actions/ShowUsersAction.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/griddynamics/testFinal/TestFinalTask.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.MD" beforeDir="false" afterPath="$PROJECT_DIR$/README.MD" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/griddynamics/finalTask/FinalTask.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/griddynamics/finalTask/FinalTask.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/griddynamics/finalTask/Goal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/griddynamics/finalTask/Goal.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/griddynamics/finalTask/Manager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/griddynamics/finalTask/Manager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/griddynamics/finalTask/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/griddynamics/finalTask/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/griddynamics/finalTask/actions/Action.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/griddynamics/finalTask/actions/Action.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/griddynamics/finalTask/actions/ActionParser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/griddynamics/finalTask/actions/ActionParser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/griddynamics/finalTask/actions/AddGoalAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/griddynamics/finalTask/actions/AddGoalAction.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/griddynamics/finalTask/actions/AddUserAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/griddynamics/finalTask/actions/AddUserAction.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/griddynamics/finalTask/actions/EditDescription.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/griddynamics/finalTask/actions/EditDescription.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/griddynamics/finalTask/actions/MenuAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/griddynamics/finalTask/actions/MenuAction.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/griddynamics/models/Truck.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/griddynamics/models/Truck.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/griddynamics/models/Vehicle.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/griddynamics/models/Vehicle.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -215,16 +217,16 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestSerializationSolution (1)" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="Java_Kolegova_repo" />
+    <configuration name="TestFinalTask" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="first-app" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.griddynamics.testSerializationTask.*" />
+          <option name="PATTERN" value="com.griddynamics.testFinal.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.griddynamics.testSerializationTask" />
-      <option name="MAIN_CLASS_NAME" value="com.griddynamics.testSerializationTask.TestSerializationSolution" />
+      <option name="PACKAGE_NAME" value="com.griddynamics.testFinal" />
+      <option name="MAIN_CLASS_NAME" value="com.griddynamics.testFinal.TestFinalTask" />
       <option name="TEST_OBJECT" value="CLASS" />
       <properties />
       <listeners />
@@ -234,18 +236,18 @@
     </configuration>
     <list>
       <item itemvalue="Application.CollectionsTask" />
-      <item itemvalue="TestNG.TestSerializationSolution (1)" />
+      <item itemvalue="Application.FinalTask" />
       <item itemvalue="TestNG.TestCollectionTask" />
       <item itemvalue="TestNG.TestCollectionTask.testUsual" />
-      <item itemvalue="Application.FinalTask" />
+      <item itemvalue="TestNG.TestFinalTask" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="Application.FinalTask" />
+        <item itemvalue="TestNG.TestFinalTask" />
         <item itemvalue="TestNG.TestCollectionTask" />
         <item itemvalue="TestNG.TestCollectionTask.testUsual" />
         <item itemvalue="Application.CollectionsTask" />
-        <item itemvalue="TestNG.TestSerializationSolution (1)" />
       </list>
     </recent_temporary>
   </component>

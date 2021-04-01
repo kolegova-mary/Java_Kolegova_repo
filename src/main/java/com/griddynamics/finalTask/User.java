@@ -1,5 +1,7 @@
 package com.griddynamics.finalTask;
 
+import com.sun.istack.internal.NotNull;
+
 import java.util.ArrayList;
 import java.util.List;
 import java.util.NoSuchElementException;
@@ -13,12 +15,18 @@ public class User {
     public String phoneNumber;
     List<Goal> goals;
 
-    public User( String firstName, String lastName, String nickName, String phoneNumber) {
+    public User(@NotNull String firstName, @NotNull String lastName, @NotNull String nickName, @NotNull String phoneNumber) {
         this(firstName, lastName, nickName, phoneNumber, new ArrayList<>());
     }
 
-    public User(String firstName, String lastName, String nickName, String phoneNumber, List<Goal> goals) {
-        this.userId =  UUID.randomUUID().toString();
+    /**
+     * @param firstName - first name couldn't be edited
+     * @param lastName  - last name couldn't be edited
+     * @param nickName  - could be changed
+     * @param goals - list of goals for one user
+     */
+    public User(@NotNull String firstName, @NotNull String lastName, @NotNull String nickName, @NotNull String phoneNumber, List<Goal> goals) {
+        this.userId = UUID.randomUUID().toString();
         this.firstName = firstName;
         this.lastName = lastName;
         this.nickName = nickName;
@@ -26,14 +34,33 @@ public class User {
         this.goals = goals;
     }
 
+    /**
+     *
+     * @param goalName - name of a goal
+     * @return - Object Goal
+     * @throws NoSuchElementException - there is no such goal of user
+     */
     public Goal findGoal(String goalName) throws NoSuchElementException {
         return goals.stream()
                 .filter(goal -> goal.getName().equalsIgnoreCase(goalName))
                 .findAny().get();
     }
 
+    public void writeGoals() {
+        if (goals != null && goals.isEmpty()) {
+            System.out.println("There are no goals");
+        } else {
+            for (Goal goal : goals) {
+                System.out.println(goal);
+            }
+        }
+    }
 
-    public void addGoal(Goal goal){
+    /**
+     *
+     * @param goal - name of a goal, that needs to be added
+     */
+    public void addGoal(Goal goal) {
         goals.add(goal);
     }
 
@@ -65,15 +92,27 @@ public class User {
         this.userId = userId;
     }
 
-    public void setNickName(String nickName) {
+    public void setNickName(@NotNull String nickName) {
         this.nickName = nickName;
     }
 
-    public void setPhoneNumber(String phoneNumber) {
+    public void setPhoneNumber(@NotNull String phoneNumber) {
         this.phoneNumber = phoneNumber;
     }
 
-    public void setGoals(List<Goal> goals) {
+    public void setGoals(@NotNull List<Goal> goals) {
         this.goals = goals;
     }
+
+    @Override
+    public String toString() {
+        return "User:" +
+                "userId='" + userId + '\'' +
+                ", firstName='" + firstName + '\'' +
+                ", lastName='" + lastName + '\'' +
+                ", nickName='" + nickName + '\'' +
+                ", phoneNumber='" + phoneNumber + '\'';
+    }
+
+
 }

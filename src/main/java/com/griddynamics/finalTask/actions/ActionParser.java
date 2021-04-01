@@ -1,6 +1,11 @@
 package com.griddynamics.finalTask.actions;
 
 public class ActionParser {
+    /**
+     *
+     * @param actionNum - number of action from 1 to 9
+     * @return - executing of chosen action
+     */
     public Action parse(int actionNum) {
         Action action;
         switch (actionNum) {
@@ -23,7 +28,13 @@ public class ActionParser {
                 action = new AddUserAction();
                 break;
             case 7:
-                action = new ExitAction();
+                action = new ShowUsersAction();
+                break;
+            case 8:
+                action = new ShowGoalsAction();
+                break;
+            case 9:
+                action=new ExitAction();
                 break;
             default:
                 throw new IllegalStateException("Unexpected value: " + actionNum);
